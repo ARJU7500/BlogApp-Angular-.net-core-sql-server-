@@ -5,7 +5,7 @@ namespace BlogAppAPI.Entity
     [Table("BLOG_CATEGORY")]
     public class Category
     {
-        public int BlogCategoryId { get; set; }
+        public int CategoryId { get; set; }
         public string? CategotyName { get; set; }
         public string? CreatedBy { get; set; }
         public DateTime CreatrdOn { get; set; }

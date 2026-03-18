@@ -5,41 +5,151 @@
     "version": "1.0"
   },
   "paths": {
-    "/WeatherForecast": {
+    "/api/BlogMaster": {
       "get": {
         "tags": [
-          "WeatherForecast"
+          "BlogMaster"
         ],
-        "operationId": "GetWeatherForecast",
         "responses": {
           "200": {
-            "description": "OK",
-            "content": {
-              "text/plain": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "application/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
-              },
-              "text/json": {
-                "schema": {
-                  "type": "array",
-                  "items": {
-                    "$ref": "#/components/schemas/WeatherForecast"
-                  }
-                }
+            "description": "OK"
+          }
+        }
+      },
+      "post": {
+        "tags": [
+          "BlogMaster"
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Blog"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Blog"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Blog"
               }
             }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BlogMaster/{id}": {
+      "get": {
+        "tags": [
+          "BlogMaster"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "put": {
+        "tags": [
+          "BlogMaster"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "requestBody": {
+          "content": {
+            "application/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Blog"
+              }
+            },
+            "text/json": {
+              "schema": {
+                "$ref": "#/components/schemas/Blog"
+              }
+            },
+            "application/*+json": {
+              "schema": {
+                "$ref": "#/components/schemas/Blog"
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      },
+      "delete": {
+        "tags": [
+          "BlogMaster"
+        ],
+        "parameters": [
+          {
+            "name": "id",
+            "in": "path",
+            "required": true,
+            "schema": {
+              "type": "integer",
+              "format": "int32"
+            }
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/BlogMaster/featured": {
+      "get": {
+        "tags": [
+          "BlogMaster"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
+          }
+        }
+      }
+    },
+    "/api/Category": {
+      "get": {
+        "tags": [
+          "Category"
+        ],
+        "responses": {
+          "200": {
+            "description": "OK"
           }
         }
       }
@@ -47,25 +157,80 @@
   },
   "components": {
     "schemas": {
-      "WeatherForecast": {
+      "Blog": {
         "type": "object",
         "properties": {
-          "date": {
-            "type": "string",
-            "format": "date"
-          },
-          "temperatureC": {
+          "blogId": {
             "type": "integer",
             "format": "int32"
           },
-          "temperatureF": {
-            "type": "integer",
-            "format": "int32",
-            "readOnly": true
-          },
-          "summary": {
+          "title": {
             "type": "string",
             "nullable": true
+          },
+          "description": {
+            "type": "string",
+            "nullable": true
+          },
+          "content": {
+            "type": "string",
+            "nullable": true
+          },
+          "image": {
+            "type": "string",
+            "nullable": true
+          },
+          "isFetured": {
+            "type": "boolean"
+          },
+          "categoryId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "category": {
+            "$ref": "#/components/schemas/Category"
+          },
+          "creatrdOn": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatrdOn": {
+            "type": "string",
+            "format": "date-time"
+          }
+        },
+        "additionalProperties": false
+      },
+      "Category": {
+        "type": "object",
+        "properties": {
+          "categoryId": {
+            "type": "integer",
+            "format": "int32"
+          },
+          "categotyName": {
+            "type": "string",
+            "nullable": true
+          },
+          "createdBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "creatrdOn": {
+            "type": "string",
+            "format": "date-time"
+          },
+          "updatedBy": {
+            "type": "string",
+            "nullable": true
+          },
+          "updatrdOn": {
+            "type": "string",
+            "format": "date-time"
           }
         },
         "additionalProperties": false

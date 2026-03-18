@@ -1,4 +1,5 @@
 using BlogAppAPI.Data;
+using BlogAppAPI.Entity;
 using Microsoft.EntityFrameworkCore;
 
 var builder = WebApplication.CreateBuilder(args);
@@ -12,6 +13,11 @@ builder.Services.AddSwaggerGen();
 //dbcontext service with the help of dependence injection.
 var ConnectionString = builder.Configuration["ConnectionString"];
 builder.Services.AddDbContext<AppDbContext>(options => options.UseSqlServer(ConnectionString));
+//add Dependenct injection for generaic repositry and specfic repositry
+//========For Blog entity=====================
+builder.Services.AddScoped<IRepository<Blog>, SqlRepository<Blog>>();
+//========For Category entity=====================
+builder.Services.AddScoped<IRepository<Category>, SqlRepository<Category>>();
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.

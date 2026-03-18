@@ -1,23 +1,101 @@
 [
   {
-    "ContainingType": "BlogAppAPI.Controllers.WeatherForecastController",
-    "Method": "Get",
-    "RelativePath": "WeatherForecast",
+    "ContainingType": "BlogAppAPI.Controllers.BlogMasterController",
+    "Method": "GetBlogList",
+    "RelativePath": "api/BlogMaster",
     "HttpMethod": "GET",
     "IsController": true,
     "Order": 0,
     "Parameters": [],
-    "ReturnTypes": [
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BlogAppAPI.Controllers.BlogMasterController",
+    "Method": "AddBlog",
+    "RelativePath": "api/BlogMaster",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
       {
-        "Type": "System.Collections.Generic.IEnumerable\u00601[[BlogAppAPI.WeatherForecast, BlogAppAPI, Version=1.0.0.0, Culture=neutral, PublicKeyToken=null]]",
-        "MediaTypes": [
-          "text/plain",
-          "application/json",
-          "text/json"
-        ],
-        "StatusCode": 200
+        "Name": "model",
+        "Type": "BlogAppAPI.Entity.Blog",
+        "IsRequired": true
       }
     ],
-    "EndpointName": "GetWeatherForecast"
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BlogAppAPI.Controllers.BlogMasterController",
+    "Method": "GetBlog",
+    "RelativePath": "api/BlogMaster/{id}",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BlogAppAPI.Controllers.BlogMasterController",
+    "Method": "updateBlog",
+    "RelativePath": "api/BlogMaster/{id}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      },
+      {
+        "Name": "model",
+        "Type": "BlogAppAPI.Entity.Blog",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BlogAppAPI.Controllers.BlogMasterController",
+    "Method": "DeleteBlog",
+    "RelativePath": "api/BlogMaster/{id}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "id",
+        "Type": "System.Int32",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BlogAppAPI.Controllers.BlogMasterController",
+    "Method": "GetFeaturedBlog",
+    "RelativePath": "api/BlogMaster/featured",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "BlogAppAPI.Controllers.CategoryController",
+    "Method": "getAllCategory",
+    "RelativePath": "api/Category",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [],
+    "ReturnTypes": []
   }
 ]

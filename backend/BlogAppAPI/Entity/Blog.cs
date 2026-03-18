@@ -11,8 +11,8 @@ namespace BlogAppAPI.Entity
         public string? Content { get; set; }
         public string? image { get; set; }
         public bool isFetured { get; set; }
-        public int IategryId { get; set; }
-        public Category Category { get; set; }
+        public int CategoryId { get; set; }
+        public Category? Category { get; set; }
         public DateTime CreatrdOn { get; set; }
         public string? UpdatedBy { get; set; }
         public DateTime UpdatrdOn { get; set; }
