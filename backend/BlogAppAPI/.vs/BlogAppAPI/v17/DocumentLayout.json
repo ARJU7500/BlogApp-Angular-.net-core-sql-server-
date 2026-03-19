@@ -3,12 +3,20 @@
   "WorkspaceRootPath": "D:\\full stack Application core\u002Bangular\u002Bsql\\Blog Project\\BlogApp-Angular-.net-core-sql-server-\\backend\\BlogAppAPI\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{DDC1075F-89C6-4076-8663-3C9B5EC18A35}|BlogAppAPI.csproj|d:\\full stack application core\u002Bangular\u002Bsql\\blog project\\blogapp-angular-.net-core-sql-server-\\backend\\blogappapi\\controllers\\blogmastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC1075F-89C6-4076-8663-3C9B5EC18A35}|BlogAppAPI.csproj|solutionrelative:controllers\\blogmastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{DDC1075F-89C6-4076-8663-3C9B5EC18A35}|BlogAppAPI.csproj|d:\\full stack application core\u002Bangular\u002Bsql\\blog project\\blogapp-angular-.net-core-sql-server-\\backend\\blogappapi\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC1075F-89C6-4076-8663-3C9B5EC18A35}|BlogAppAPI.csproj|solutionrelative:program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDC1075F-89C6-4076-8663-3C9B5EC18A35}|BlogAppAPI.csproj|d:\\full stack application core\u002Bangular\u002Bsql\\blog project\\blogapp-angular-.net-core-sql-server-\\backend\\blogappapi\\data\\sqlrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDC1075F-89C6-4076-8663-3C9B5EC18A35}|BlogAppAPI.csproj|solutionrelative:data\\sqlrepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC1075F-89C6-4076-8663-3C9B5EC18A35}|BlogAppAPI.csproj|d:\\full stack application core\u002Bangular\u002Bsql\\blog project\\blogapp-angular-.net-core-sql-server-\\backend\\blogappapi\\data\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC1075F-89C6-4076-8663-3C9B5EC18A35}|BlogAppAPI.csproj|solutionrelative:data\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{DDC1075F-89C6-4076-8663-3C9B5EC18A35}|BlogAppAPI.csproj|d:\\full stack application core\u002Bangular\u002Bsql\\blog project\\blogapp-angular-.net-core-sql-server-\\backend\\blogappapi\\controllers\\blogmastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{DDC1075F-89C6-4076-8663-3C9B5EC18A35}|BlogAppAPI.csproj|solutionrelative:controllers\\blogmastercontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
       "AbsoluteMoniker": "D:0:0:{DDC1075F-89C6-4076-8663-3C9B5EC18A35}|BlogAppAPI.csproj|d:\\full stack application core\u002Bangular\u002Bsql\\blog project\\blogapp-angular-.net-core-sql-server-\\backend\\blogappapi\\controllers\\categorycontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
@@ -17,10 +25,6 @@
     {
       "AbsoluteMoniker": "D:0:0:{DDC1075F-89C6-4076-8663-3C9B5EC18A35}|BlogAppAPI.csproj|d:\\full stack application core\u002Bangular\u002Bsql\\blog project\\blogapp-angular-.net-core-sql-server-\\backend\\blogappapi\\entity\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{DDC1075F-89C6-4076-8663-3C9B5EC18A35}|BlogAppAPI.csproj|solutionrelative:entity\\blog.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
-    },
-    {
-      "AbsoluteMoniker": "D:0:0:{DDC1075F-89C6-4076-8663-3C9B5EC18A35}|BlogAppAPI.csproj|d:\\full stack application core\u002Bangular\u002Bsql\\blog project\\blogapp-angular-.net-core-sql-server-\\backend\\blogappapi\\data\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{DDC1075F-89C6-4076-8663-3C9B5EC18A35}|BlogAppAPI.csproj|solutionrelative:data\\irepository.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -30,7 +34,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 5,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -42,20 +46,33 @@
             },
             {
               "$type": "Document",
+              "DocumentIndex": 0,
+              "Title": "Program.cs",
+              "DocumentMoniker": "D:\\full stack Application core\u002Bangular\u002Bsql\\Blog Project\\BlogApp-Angular-.net-core-sql-server-\\backend\\BlogAppAPI\\Program.cs",
+              "RelativeDocumentMoniker": "Program.cs",
+              "ToolTip": "D:\\full stack Application core\u002Bangular\u002Bsql\\Blog Project\\BlogApp-Angular-.net-core-sql-server-\\backend\\BlogAppAPI\\Program.cs",
+              "RelativeToolTip": "Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAB0AAAAaAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2026-03-19T14:33:12.759Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
               "DocumentIndex": 1,
               "Title": "SqlRepository.cs",
               "DocumentMoniker": "D:\\full stack Application core\u002Bangular\u002Bsql\\Blog Project\\BlogApp-Angular-.net-core-sql-server-\\backend\\BlogAppAPI\\Data\\SqlRepository.cs",
               "RelativeDocumentMoniker": "Data\\SqlRepository.cs",
               "ToolTip": "D:\\full stack Application core\u002Bangular\u002Bsql\\Blog Project\\BlogApp-Angular-.net-core-sql-server-\\backend\\BlogAppAPI\\Data\\SqlRepository.cs",
               "RelativeToolTip": "Data\\SqlRepository.cs",
-              "ViewState": "AgIAABQAAAAAAAAAAAAgwCAAAAAIAAAAAAAAAA==",
+              "ViewState": "AgIAAA0AAAAAAAAAAAAQwA8AAAA2AAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2026-03-18T17:58:08.607Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 4,
+              "DocumentIndex": 2,
               "Title": "IRepository.cs",
               "DocumentMoniker": "D:\\full stack Application core\u002Bangular\u002Bsql\\Blog Project\\BlogApp-Angular-.net-core-sql-server-\\backend\\BlogAppAPI\\Data\\IRepository.cs",
               "RelativeDocumentMoniker": "Data\\IRepository.cs",
@@ -68,7 +85,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 3,
+              "DocumentIndex": 5,
               "Title": "Blog.cs",
               "DocumentMoniker": "D:\\full stack Application core\u002Bangular\u002Bsql\\Blog Project\\BlogApp-Angular-.net-core-sql-server-\\backend\\BlogAppAPI\\Entity\\Blog.cs",
               "RelativeDocumentMoniker": "Entity\\Blog.cs",
@@ -76,12 +93,11 @@
               "RelativeToolTip": "Entity\\Blog.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAA4AAAAYAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T17:56:12.756Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-18T17:56:12.756Z"
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 3,
               "Title": "BlogMasterController.cs",
               "DocumentMoniker": "D:\\full stack Application core\u002Bangular\u002Bsql\\Blog Project\\BlogApp-Angular-.net-core-sql-server-\\backend\\BlogAppAPI\\Controllers\\BlogMasterController.cs",
               "RelativeDocumentMoniker": "Controllers\\BlogMasterController.cs",
@@ -94,7 +110,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 4,
               "Title": "CategoryController.cs",
               "DocumentMoniker": "D:\\full stack Application core\u002Bangular\u002Bsql\\Blog Project\\BlogApp-Angular-.net-core-sql-server-\\backend\\BlogAppAPI\\Controllers\\CategoryController.cs",
               "RelativeDocumentMoniker": "Controllers\\CategoryController.cs",
@@ -102,8 +118,7 @@
               "RelativeToolTip": "Controllers\\CategoryController.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAwAAABDAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
-              "WhenOpened": "2026-03-18T12:32:00.616Z",
-              "EditorCaption": ""
+              "WhenOpened": "2026-03-18T12:32:00.616Z"
             }
           ]
         }
